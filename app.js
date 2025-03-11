@@ -2,4 +2,8 @@
 
 let amigos = [];
 
-function adicionarAmigo()
+function adicionarAmigo(){
+    amigos.push(document.getElementById('amigo').value); //adiciona o nome digitado na lista de amigos
+    document.getElementById('amigo').value = ''; //limpa o campo de texto
+    
+}
