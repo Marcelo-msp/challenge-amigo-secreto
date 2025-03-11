@@ -17,3 +17,13 @@ function adicionarAmigo(){
         atualizarListaAmigos(); // Atualiza a lista de amigos na interface
     }
 }
+function atualizarListaAmigos() {
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = ''; // Limpa a lista antes de adicionar novos elementos
+
+    for (let i = 0; i < amigos.length; i++) {
+        const li = document.createElement('li');
+        li.textContent = amigos[i];
+        listaAmigos.appendChild(li);
+    }
+}
